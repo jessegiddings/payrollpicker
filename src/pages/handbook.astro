@@ -1,0 +1,185 @@
+---
+/**
+ * Gated download page for the BC Owner's Handbook.
+ *
+ * LAUNCH GATE: the handbook describes statutory obligations carrying financial
+ * consequences and must not go live until reviewed by a BC construction lawyer.
+ * See docs/sources/statutory-verification.md.
+ *
+ * The email capture posts to Formspree (same endpoint as the project review
+ * form, distinguished by the _subject field) and redirects to
+ * /handbook/thank-you, which carries the download link.
+ */
+import Article from '../layouts/Article.astro';
+import Plate from '../components/Plate.astro';
+import { SITE } from '../lib/site';
+
+const chapters: [string, string, string][] = [
+  ['01', 'Who works for whom', 'The incentive map of a construction project, described fairly.'],
+  ['02', 'Before you sign', 'Fixed price, cost-plus and GMP — and the clauses worth reading twice.'],
+  ['03', 'Who is allowed to build your house', 'Licensing, verification, and what owner-builder status costs you.'],
+  ['04', 'The warranty you get, and the gaps', '2-5-10 explained properly, including the windows inside the two years.'],
+  ['05', 'The 10% you are legally required to withhold', 'The statutory holdback, and what non-compliance exposes you to.'],
+  ['06', 'Paying for work', 'What a payment application is, and the four places the number goes wrong.'],
+  ['07', 'Change orders', 'Scope, cause, cost — and a log that survives a dispute.'],
+  ['08', 'When a lien appears', 'What it does to title, the periods that apply, and what to do first.'],
+  ['09', 'Finishing', 'Substantial completion, the holdback period, the title search, closeout.'],
+  ['10', 'If you are not there', 'Verification at distance, and why the statutory clocks bite harder.'],
+];
+
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Book',
+    name: 'Building in British Columbia: What the Owner Is Responsible For',
+    author: { '@type': 'Organization', name: SITE.name, url: SITE.url },
+    publisher: { '@type': 'Organization', name: SITE.name, url: SITE.url },
+    inLanguage: 'en-CA',
+    about:
+      'Owner obligations under the Builders Lien Act and Homeowner Protection Act in British Columbia',
+  },
+];
+---
+
+<Article
+  title={`The BC Owner's Handbook — ${SITE.name}`}
+  heading="Building in British Columbia: what the owner is responsible for"
+  kicker="A free guide"
+  description="A plain-language guide to the obligations British Columbia law places on the owner of a residential construction project — licensing, warranty, the statutory 10% holdback, payment, change orders, liens and completion. Free, with section references throughout."
+  jsonLd={jsonLd}
+>
+  <p>
+    British Columbia places obligations directly on the person who owns the land and signs the construction
+    contract. Some of them carry money consequences if you get them wrong. Almost none of them are explained
+    to you by anyone on the project — not because anyone is hiding them, but because nobody on the project is
+    paid to explain them.
+  </p>
+  <p>
+    This guide sets out, in order, what the legislation asks of you, what the paperwork actually means, and
+    where the ordinary failure points are. Every statutory claim carries its section number so you or your
+    lawyer can read the source. It is written for someone who has never built before and is not looking to be
+    impressed.
+  </p>
+
+  <blockquote>
+    <p>
+      An owner can pay every invoice on time, in full, with no complaint about the work — and still be
+      required to pay part of it a second time. That mechanism is Chapter 5.
+    </p>
+  </blockquote>
+
+  <div slot="after" class="mt-14">
+    <h2 class="text-2xl font-semibold tracking-tight">What's in it</h2>
+
+    <ol class="mt-6 max-w-3xl">
+      {
+        chapters.map(([n, title, blurb]) => (
+          <li class="grid grid-cols-[3rem_1fr] border-t border-rule py-5">
+            <p class="annotation pt-1">{n}</p>
+            <div>
+              <h3 class="text-base font-semibold">{title}</h3>
+              <p class="mt-1.5 text-[0.95rem] leading-relaxed text-ink/90">{blurb}</p>
+            </div>
+          </li>
+        ))
+      }
+      <li class="grid grid-cols-[3rem_1fr] border-t border-b border-rule py-5">
+        <p class="annotation pt-1">A–C</p>
+        <div>
+          <h3 class="text-base font-semibold">Appendices</h3>
+          <p class="mt-1.5 text-[0.95rem] leading-relaxed text-ink/90">
+            An owner's obligations checklist by project phase, nine questions to ask before signing, and a
+            glossary.
+          </p>
+        </div>
+      </li>
+    </ol>
+
+    <Plate
+      src="/plates/plate-07-rule.svg"
+      alt="A steel measuring rule on an empty field, casting one shadow"
+      caption="Every statutory claim in the guide carries its section reference."
+      class="my-12 max-w-3xl aspect-[21/9]"
+    />
+
+    <div class="max-w-2xl border-t border-rule pt-10">
+      <h2 class="text-2xl font-semibold tracking-tight">Where should we send it?</h2>
+      <p class="prose mt-4">
+        One email with the guide attached. We do not run a newsletter, we do not sell or share the list, and
+        you can ask us to delete your address at any time by replying. See the <a href="/privacy">privacy
+        page</a>.
+      </p>
+
+      <form name="handbook" method="POST" action={SITE.formEndpoint} class="mt-8">
+        <input type="hidden" name="_subject" value="Handbook download — erskineadvisory.com" />
+        <input type="hidden" name="_next" value={`${SITE.url}/handbook/thank-you`} />
+        <input type="hidden" name="source" value="handbook-gate" />
+
+        <p class="hidden" aria-hidden="true">
+          <label>
+            Leave this field empty: <input name="_gotcha" tabindex="-1" autocomplete="off" />
+          </label>
+        </p>
+
+        <div class="grid gap-6 sm:grid-cols-2">
+          <div>
+            <label for="hb-name" class="block text-sm font-medium">
+              Name <span aria-hidden="true" class="text-accent">*</span>
+            </label>
+            <input
+              id="hb-name"
+              name="name"
+              type="text"
+              required
+              autocomplete="name"
+              class="mt-2 w-full border border-rule bg-white px-3 py-2.5 text-base focus:border-accent"
+            />
+          </div>
+          <div>
+            <label for="hb-email" class="block text-sm font-medium">
+              Email <span aria-hidden="true" class="text-accent">*</span>
+            </label>
+            <input
+              id="hb-email"
+              name="email"
+              type="email"
+              required
+              autocomplete="email"
+              class="mt-2 w-full border border-rule bg-white px-3 py-2.5 text-base focus:border-accent"
+            />
+          </div>
+        </div>
+
+        <div class="mt-6">
+          <label for="hb-role" class="block text-sm font-medium">
+            Your role <span class="text-mid">(optional)</span>
+          </label>
+          <select
+            id="hb-role"
+            name="role"
+            class="mt-2 w-full max-w-sm border border-rule bg-white px-3 py-2.5 text-base focus:border-accent"
+          >
+            <option value="">Select one</option>
+            <option value="owner">Owner — building or planning to</option>
+            <option value="family-office">Family office or private staff</option>
+            <option value="architect">Architect or designer</option>
+            <option value="lawyer">Lawyer</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <button
+          type="submit"
+          class="mt-8 border border-ink bg-ink px-6 py-3 text-base font-medium text-paper transition-colors hover:border-accent hover:bg-accent"
+        >
+          Send me the handbook
+        </button>
+      </form>
+
+      <p class="mt-8 max-w-prose text-sm leading-relaxed text-mid">
+        This guide explains what the legislation requires. It is not legal advice. Consult a BC construction
+        lawyer on your specific project.
+      </p>
+    </div>
+  </div>
+</Article>

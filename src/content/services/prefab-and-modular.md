@@ -27,4 +27,10 @@ The same structures as our conventional engagements — fixed-fee audit, percent
 
 ## What it isn't
 
-Not an endorsement of any manufacturer, and not a sourcing service: we hold no interest in any manufacturer, take no referral fees from any of them, and don't steer clients toward or away from any company — the [independence commitment](/independence) applies with particular force in a corner of the industry where recommendations are usually paid for. One of us spent five years inside a prefabricated housing company; that is where the knowledge comes from, and the commitment is what keeps it usable on your side of the table.
+Not an endorsement of any manufacturer, and not a sourcing service: we hold no interest in any manufacturer, take no referral fees from any of them, and will not steer an owner toward or away from any company — the [independence commitment](/independence) applies with particular force in a corner of the industry where recommendations are usually paid for. One of us spent five years inside a prefabricated housing company; that is where the knowledge comes from, and the commitment is what keeps it usable on your side of the table.
+
+
+## Further reading
+
+- [2-5-10: what isn't covered](/insights/2-5-10-what-isnt-covered) — including how factory-built homes sit relative to the BC warranty requirement
+- [What a payment application doesn't tell you](/insights/what-a-payment-application-doesnt-tell-you) — verification when the work happens somewhere you cannot stand

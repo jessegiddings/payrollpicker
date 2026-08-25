@@ -1,7 +1,7 @@
 ---
 title: 'Owner’s Representation'
 slug: 'owners-representation'
-summary: 'Full owner-side management from design through warranty and final reconciliation — including the verification and payment functions most representatives don’t carry.'
+summary: 'Full owner-side representation from design through warranty and final reconciliation — including the verification and payment functions most representatives don’t carry.'
 feeShape: 'Percentage of construction cost (stepping down with scale) or monthly retainer, quoted per engagement'
 whoItsFor: 'Owners committing to a multi-year project who want one party at the table with no position but theirs'
 order: 3
@@ -48,3 +48,9 @@ A percentage of construction cost billed monthly with final reconciliation, step
 ## What it isn't
 
 Not a second builder, and not a replacement for your architect or contractor — the project still needs both doing their jobs well ([the comparison page](/compare) sets out where each model belongs). Not a guarantee that nothing goes wrong; it is the structure that determines how early you find out and how strong your position is when something must be resolved.
+
+## Further reading
+
+- [Owner's representative vs general contractor: who works for whom](/insights/owners-rep-vs-general-contractor) — the structural comparison, fair to both
+- [What an owner's representative costs](/insights/what-an-owners-rep-costs) — real ranges, three worked examples, and what we refuse
+- [When you don't need an owner's representative](/insights/when-you-dont-need-one) — the honest other side

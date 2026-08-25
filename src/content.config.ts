@@ -24,4 +24,18 @@ const insights = defineCollection({
   }),
 });
 
-export const collections = { services, insights };
+// Long-form guides. Source of record for the gated PDF at
+// public/downloads/ — the PDF is generated from this markdown, so edit here
+// and rebuild rather than editing the PDF.
+const guides = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/guides' }),
+  schema: z.object({
+    title: z.string(),
+    slug: z.string(),
+    description: z.string(),
+    publishDate: z.coerce.date(),
+    keywords: z.array(z.string()),
+  }),
+});
+
+export const collections = { services, insights, guides };

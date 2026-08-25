@@ -1,54 +1,170 @@
 ---
 title: 'The 10% You Are Legally Required to Withhold'
 slug: 'the-ten-percent-you-must-withhold'
-description: 'BC’s Builders Lien Act places a holdback obligation on the owner — not the builder — on every progress payment. What it is, what it protects you from, and why your builder cannot handle it for you.'
-publishDate: 2026-08-11
-keywords: ['builders lien act holdback', 'BC holdback 10 percent', 'construction holdback BC', 'builders lien holdback owner obligation']
+description: 'British Columbia requires the owner of a construction project to retain a 10% holdback on every contract. An owner who pays in full without retaining it can be exposed to lien claims up to that amount — money already paid out. The obligation, the mechanism, and what compliance looks like.'
+publishDate: 2026-08-25
+keywords: ['builders lien act holdback', 'bc 10 percent holdback', 'construction holdback british columbia', 'holdback account bc', 'builders lien act section 4']
 ---
 
-<!-- STATUTORY VERIFICATION GATE (rebuild spec §4/§6): every [VERIFY] token
-     must be replaced only from the current consolidated Builders Lien Act at
-     bclaws.gov.bc.ca, and this article reviewed by a BC construction lawyer
-     before public launch. See docs/sources/statutory-verification.md. -->
+An owner can pay every invoice on time, in full, with no complaint about the
+work — and still be required to pay part of it a second time.
 
-Somewhere in the paperwork of almost every residential construction project in British Columbia is an obligation most owners have never heard of, that their contract may never mention, and that sits — by statute — on the owner personally. Under the Builders Lien Act, an owner making progress payments is required to retain a holdback of 10% of each payment [VERIFY: exact statutory basis — percentage, and whether calculated on the payment or the value of the work]. Not entitled to. Required to.
+The mechanism is in the Builders Lien Act. It is not obscure, it applies to
+private homeowners as squarely as it applies to developers, and it is avoidable
+by anyone who knows about it before the first payment goes out.
 
-This article explains the obligation in plain language. It is not legal advice — the Act has details, exceptions and deadlines that belong with a construction lawyer, and part of what follows is about knowing when to call one.
+*This article explains what the legislation requires. It is not legal advice.
+Consult a BC construction lawyer on your project.*
 
-## The obligation, plainly
+## The consequence first
 
-When you make a progress payment to your contractor, the Act requires you to keep back a portion [VERIFY: percentage and calculation base] rather than paying the invoice in full. The retained money accumulates through the project into a pool — the holdback — which is held for a defined period after the statutory trigger [VERIFY: holdback period in days; secondary sources disagree between 45 and 55, and on the trigger event] and released only after that period expires and you have confirmed what has been filed against your property.
+Your subcontractors and suppliers have no contract with you. You did not hire
+them, you may not know their names, and you owe them nothing directly. If your
+general contractor fails to pay them, they can register a claim of lien against
+your land.
 
-Three features make this different from ordinary contract terms:
+Section 34(1) of the Act caps what they can recover. The maximum aggregate amount
+recoverable by all lien holders claiming under the same contractor is **the greater
+of** two figures: the amount you still owe that contractor, and the amount of the
+**required** holdback for that contract.
 
-**It is statutory.** It applies whether or not your construction contract mentions it, and a contract clause cannot waive it [VERIFY: anti-waiver provision]. Many residential contracts are silent on it, which is how so many owners pay every invoice in full without knowing anything was wrong.
+The word doing the work in that sentence is *required*. Not the amount you
+retained — the amount the Act says you were supposed to retain.
 
-**It applies to you.** "Owner" under the Act captures a homeowner contracting directly with a general contractor [VERIFY: definition of "owner"]. This is not an obligation confined to developers and institutions.
+So take the owner who pays every application in full and holds nothing back. The
+house is finished, the contractor has been paid everything, and the owner owes
+nothing to anyone. Two subcontractors then register liens because the contractor
+did not pay them. The amount owing to the contractor is zero. The required
+holdback — 10% calculated on the s.4(1) base, which on a fully paid contract is
+the whole of it — was never retained. The cap is the greater of the two, so the
+exposure is that 10%, and it has already left the owner's account. To clear title,
+they fund it again.
 
-**It has a calendar.** Liens can be filed within a defined window after completion [VERIFY: lien filing deadline], and the holdback must be held through its own period [VERIFY]. The dates run from statutory trigger events — not from your last invoice, and not from anyone reminding you.
+On a $4 million contract paid out in full, that is $400,000 found twice.
 
-## What it protects you from
+## The obligation
 
-The holdback is the legislature's answer to a hard problem: people who improve your property but have no contract with you. Your contractor's subcontractors, their workers, their suppliers — none of them can invoice you, but all of them can, if unpaid, file liens against your title.
+Section 4(1) requires the person primarily liable on each contract, and on each
+subcontract, under which a lien may arise to retain a **holdback equal to 10%** of
+the greater of the value of work or material as actually provided, and the amount
+of any payment made on account of the contract price.
 
-Administered correctly, the holdback caps your exposure to those claims at the pool you retained [VERIFY: the cap provision]. You paid 90% out, you held 10%, and the unpaid subcontractors' remedy against you is limited to that fund. It is, in effect, statutory insurance you fund with money you were going to spend anyway.
+On a private residential project, the person primarily liable on the head contract
+is the owner. Not the contractor, not the architect, not the lender.
 
-Fail to retain it, and the cap can fall away. An owner who paid the contractor in full — honestly, against real invoices — can become personally exposed to lien claims up to the amount that should have been held back [VERIFY: liability provision]. In the worst version, familiar to construction lawyers everywhere: the contractor becomes insolvent mid-project, the subcontractors were not being paid, the liens arrive, and the owner discovers they may effectively pay a portion of the project twice. The owners this happens to are rarely careless people. They simply did what every other large purchase in their life had trained them to do — pay the bill in full — on the one purchase where the law required otherwise.
+Three features of the obligation surprise people:
 
-## Why your builder cannot do this for you
+**It is statutory, not contractual.** The duty is imposed by the Act on the person
+in that position. Section 4(2) confirms it applies whether the contract provides
+for periodic payments or a single payment on completion. Most standard construction
+contracts used in British Columbia do address holdback and a good one sets out the
+mechanics clearly — but the duty and its consequences live in the statute.
 
-Here is the structural point, and it is short. The holdback exists to protect the owner *from* the contracting chain — from the consequences of money failing to flow down through it. The party the money is being held back from cannot be its administrator. A builder who says "don't worry, we handle the holdback" is offering to withhold money from themselves, on your behalf, against their own downstream obligations. However sincere the offer, it is not what the Act contemplates, and if it fails, the exposure is yours, not theirs.
+**It runs down the chain.** Your contractor is required to retain 10% from each
+subcontractor, and each subcontractor from those below. The Act creates multiple
+holdbacks, not a single project pool. A holdback must not be retained from a
+worker, material supplier, architect or engineer (s.4(6)).
 
-This is worth absorbing beyond the holdback itself, because it is the legislature reaching the same conclusion this whole practice is built on: on a construction project, certain functions only count when performed from the owner's side of the table. [Open books do not change this](/insights/transparency-is-not-verification), and neither does a builder's good faith. Some obligations are structural.
+**Retaining is only half of it.** Section 5(1) requires the owner to establish a
+holdback account at a savings institution for each contract under which a lien may
+arise, pay the retained amount into it, and **administer that account jointly with
+the contractor**. Money in it is charged with payment of liens and cannot be
+withdrawn without the agreement of everyone administering it.
 
-## What administering it actually involves
+That account requirement does not apply everywhere. Section 5(8)(b) disapplies it
+where the aggregate value of work and material provided under the contract is less
+than $100,000. Note what the test is: aggregate value of work and material, not
+the headline price you signed. A renovation contract that starts below the
+threshold and grows past it moves into the requirement while it runs.
 
-Handled properly, the holdback is unglamorous arithmetic and calendar discipline: the correct amount retained on every draw and reconciled as the contract price moves; a separate holdback account where the contract value crosses the statutory threshold [VERIFY: trust account requirement and threshold]; the statutory clocks identified and calendared from the actual trigger events; a title search before release, so you know what has been filed before money moves; and a written record of every calculation and release. None of it is difficult in any given month. All of it is unforgiving in aggregate, because the deadlines are statutory and indifferent to good intentions.
+Two details worth having. Interest on the account accrues to the owner during the
+holdback period and to the contractor afterwards (s.5(6)). And failure to pay the
+required amount into the account is an act of default under the contract — on 10
+days' notice the contractor may suspend operations for as long as it continues
+(s.5(7)). An owner who ignores the account provision has handed their builder a
+lawful reason to stop work.
 
-This is exactly the shape of work an independent representative should carry — mechanical, owner-side, and paired naturally with [verifying that each draw deserved release in the first place](/services/holdback-and-draw-compliance). And it has a clean handoff line: we administer the obligation operationally; the moment it becomes interpretation or dispute, it goes to construction counsel, and part of the job is telling you that moment has arrived.
+## What compliance actually buys
 
-## If you are mid-project and reading this cold
+It is commonly said that retaining the holdback caps your exposure at 10%. That is
+not quite right, and the imprecision matters.
 
-Do not panic, and do not suddenly start withholding money without advice — improvising retention mid-stream can itself create a breach. Establish the facts first: what has been paid, what if anything was retained, where the project sits against the statutory calendar. Then take those facts to a construction lawyer, promptly, because the relevant clocks may already be running [VERIFY: deadlines]. If you want the factual groundwork — paid versus built, the draw history reconciled — assembled independently first, [that is a scoped engagement](/services/project-recovery), and it makes the lawyer's hour dramatically more productive.
+Because s.34(1) sets the cap at the **greater** of the amount owing and the
+required holdback, an owner who still owes the contractor more than 10% — the
+ordinary position at any point mid-project — is exposed to the amount owing, not
+to 10%.
 
-The holdback is the rare construction risk with a complete, legislated answer. It only asks one thing of the owner: to know it exists before the moment it matters.
+What compliance buys is more specific and more useful: the money needed to satisfy
+lien claims is money you have not yet paid out. You settle from the holdback
+instead of from a second withdrawal. That is the entire difference between an
+irritating month and an expensive one.
+
+One related provision: a payment made to a contractor after a claim of lien has
+been filed, where you have actual notice and the lien has not been removed from
+title, does not reduce the amount owing for the purposes of the cap (s.34(2)(c)).
+Once a lien is registered, paying the contractor anyway does not help you.
+
+## The clocks
+
+Two periods appear in this area and they are constantly confused, including in
+otherwise careful commentary.
+
+**45 days — filing.** A claim of lien may be filed no later than 45 days after the
+relevant event: the issue of a certificate of completion for the contract in
+question or, absent one, the later of the head contract being completed, abandoned
+or terminated and the improvement being completed or abandoned (s.20). A lien not
+filed in the manner and time provided is extinguished (s.22).
+
+**55 days — the holdback period.** The holdback period expires 55 days after a
+certificate of completion is issued (s.8(1)); or, absent one, 55 days after the
+head contract is completed, abandoned or terminated, or the improvement is
+completed or abandoned (s.8(2)).
+
+The 45 sits inside the 55. Payment of the holdback may be made after the period
+expires, and liens of the person paid and those engaged under them are then
+discharged — **unless** a claim has in the meantime been filed or enforcement
+proceedings commenced (s.8(4)).
+
+That "unless" is why careful owners search title immediately before releasing.
+The Act does not require the search. It simply provides the outcome that makes
+the search worth doing.
+
+## Compliance in practice
+
+1. **Establish the account before the first payment**, jointly administered with
+   the contractor, where s.5 applies. Retrofitting after three draws is possible
+   and unpleasant.
+2. **Calculate 10% on each application** against the greater of value provided and
+   payment made on account — not 10% of a convenient subtotal.
+3. **Show the holdback line on every payment certificate**, so the cumulative
+   figure is visible to both parties rather than reconstructed later from a stack
+   of paper.
+4. **Decline early release.** Requests are common and sometimes entirely
+   reasonable. The holdback is the only leverage that survives to the end of the
+   project, and releasing it early does not change the s.34(1) exposure.
+5. **Search title before releasing**, dated as close to the release as practical.
+   Anything other than a clean search is a call to counsel before money moves.
+
+None of this is difficult. That is what makes it uncomfortable to explain
+afterwards.
+
+## Two honest caveats
+
+This is the mechanism, not a legal opinion on your project. How the Act applies
+depends on facts an article cannot know — the structure of your contracts, whether
+a certificate of completion has been issued, what your title shows. The provisions
+here were verified against the Act on bclaws.gov.bc.ca in August 2026, and
+legislation changes.
+
+The second caveat is about tone. Nothing here suggests your builder intends to
+leave subcontractors unpaid. Most do not. Holdback exists because construction is
+a chain of credit, and a chain of credit occasionally breaks somewhere that has
+nothing to do with anyone's honesty — a trade with a cash problem on a different
+job, a supplier dispute, an insolvency two levels down. The 10% is a structural
+protection against a structural risk.
+
+---
+
+*The full picture — licensing, warranty, payment applications, change orders,
+liens and completion — is set out in our free guide,
+[Building in British Columbia: What the Owner Is Responsible For](/handbook).*

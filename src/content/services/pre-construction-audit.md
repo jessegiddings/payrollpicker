@@ -32,4 +32,11 @@ Flat, between $25,000 and $60,000, set by project scale and existing documentati
 
 ## What it isn't
 
-Not a legal opinion — your lawyer holds that role, and the audit is built to make their review sharper and cheaper. Not a technical inspection of built work; nothing has been built yet, which is the point. And not a sales exercise: many clients stop here, and the report is written to be useful even if you never engage us again.
+Not a legal opinion — your lawyer holds that role, and the audit is built to make their review sharper and cheaper. Not a technical inspection of built work; nothing has been built yet, which is the point. And not a sales exercise: the audit is a complete deliverable, written to be useful even if you never engage us again.
+
+
+## Further reading
+
+- [Nine questions to ask before you sign a construction contract](/insights/questions-before-you-sign) — the short version of the audit, free
+- [The 10% you are legally required to withhold](/insights/the-ten-percent-you-must-withhold) — the BC statutory holdback, and what non-compliance exposes you to
+- [Building in British Columbia: what the owner is responsible for](/handbook) — the full guide

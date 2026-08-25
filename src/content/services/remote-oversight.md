@@ -22,6 +22,10 @@ Each draw cycle:
 - **A written recommendation** — release, hold, or release in part, with reasons — delivered before the payment deadline, transmitted and recorded so the project file shows who approved what, when, on what evidence.
 - **The running picture**: draw against budget, change orders against contingency, schedule against baseline, photographs selected to inform rather than reassure.
 
+## Holdback and draw compliance
+
+On British Columbia projects, the statutory holdback — the 10% the Builders Lien Act requires the owner to retain, the jointly administered account, the 45- and 55-day clocks, the title search before release — is its own discipline with its own page: [holdback and draw compliance](/services/holdback-and-draw-compliance). It pairs naturally with remote oversight and is quoted alongside it. The obligation itself is explained in [the 10% you are legally required to withhold](/insights/the-ten-percent-you-must-withhold).
+
 ## Who it's for
 
 Owners in another city or country; cross-border families; anyone whose visits are quarterly rather than weekly. Also owners who are local but simply want independent verification before money moves — distance is the common case, not the requirement.
@@ -33,3 +37,10 @@ A monthly retainer scaled to draw frequency and project complexity, quoted after
 ## What it isn't
 
 Not a camera subscription or a photo-documentation service — those exist and are cheap, and we will happily tell you which to buy alongside this. Not construction management; the contractor still runs the site. And not surveillance of your builder: the best contractors welcome verified draws, because verified draws get paid without argument.
+
+
+## Further reading
+
+- [What a payment application doesn't tell you](/insights/what-a-payment-application-doesnt-tell-you) — percentage complete versus value in place
+- [Building from a distance](/insights/building-from-a-distance)
+- [Building in British Columbia: what the owner is responsible for](/handbook) — the free guide

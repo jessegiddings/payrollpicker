@@ -1,37 +1,135 @@
 ---
-title: 'Owner’s Representative vs General Contractor: Who Works for Whom'
+title: "Owner's Representative vs General Contractor: Who Works for Whom"
 slug: 'owners-rep-vs-general-contractor'
-description: 'A general contractor builds the project. An owner’s representative holds the owner’s position in it. The difference is not scope — it’s allegiance, and it decides who checks whom.'
-publishDate: 2026-08-10
-keywords: ['owner’s rep vs general contractor', 'owner’s representative', 'construction manager', 'who does what construction']
+description: "The difference between an owner's representative and a general contractor's project manager is not competence or diligence — it is who each one is obliged to. A structural comparison, fair to both."
+publishDate: 2026-08-25
+keywords: ["owner's representative vs general contractor", "owner's rep vs project manager", "who works for the owner construction", "construction project manager obligations"]
 ---
 
-The confusion is understandable, because on a well-run project the general contractor's project manager appears to be doing exactly what an owner's representative does: tracking the budget, running the schedule, reporting progress, managing problems. The overlap in *activity* is nearly total. The difference is in *who each of them works for* — and that decides what happens on every question where your interest and the builder's diverge.
+Owners ask this question in a form that is slightly off: *isn't my general
+contractor's project manager already doing what an owner's representative would
+do?*
 
-## What a general contractor is
+The activities overlap substantially. The obligation does not overlap at all. That
+distinction is the whole answer, and it is structural rather than moral — which is
+why this article is not going to be rude about general contractors.
 
-The general contractor is the party you hire to construct the project. They price the work, contract for it, sequence the trades, and carry responsibility for delivering what the contract describes. A good one is worth a great deal, and nothing in this article suggests otherwise.
+## What a general contractor is for
 
-But the GC is a counterparty. You and your contractor have a contract precisely because your interests are not identical: every dollar of contingency, every ambiguous scope item, every delay claim is a question the two of you resolve *across* the table, however friendly the table is. The GC's project manager — the person who sends the updates and answers your calls — is an employee of the contractor. That isn't a criticism; it's the job. When scope is ambiguous, their professional obligation runs to their employer.
+A general contractor builds the house. That means holding the trade contracts,
+sequencing and supervising the work, managing procurement and long-lead items,
+running site safety, carrying the risk of trade performance, and delivering a
+finished building against a contract.
 
-## What an owner's representative is
+It is a demanding job with thin margins and real risk. A good general contractor
+absorbs an enormous amount of complexity that would otherwise land on the owner,
+and on a well-run project the contractor's judgment is the single most valuable
+thing the owner has bought.
 
-An owner's representative sits on your side of that same table. They hold no contract with the builder, perform no construction work, and are paid by you alone. Their work is review and verification: whether the budget was real before you signed it, whether the contract allocates risk the way you were told, whether the work behind each payment application actually exists, and what the change orders are doing in aggregate.
+The contractor's project manager or site superintendent is usually the person the
+owner speaks to most and comes to trust. That trust is generally well placed. It is
+also worth being clear-eyed about the employment relationship underneath it: that
+person is employed by the general contractor, is evaluated by the general
+contractor, and owes their professional obligations to their employer.
 
-The structural point is simple: **the party requesting payment cannot also be the party verifying that payment is deserved.** On projects without independent representation, that is quietly the arrangement.
+This is entirely proper. It is what "employee" means. It also means that the person
+best positioned to tell you the project is in trouble is the person least free to.
 
-## "But my general contractor is honest"
+## What an owner's representative is for
 
-Probably true, and beside the point. Verification is not an accusation — public companies audit their books without accusing their accountants. On a two- or three-year project involving dozens of firms and thousands of transactions, honest errors alone justify independent review; incentives make it essential. The best contractors tend to be the least bothered by it, because verified draws get paid without argument.
+An owner's representative is retained by the owner, is paid only by the owner, and
+holds no contract with any party performing the work. The role is to read the
+project on the owner's behalf: review the contract before it is signed, test
+payment applications against work actually in place, administer change orders,
+track the statutory obligations that fall on the owner, coordinate the consultant
+team, and report in a form the owner can act on.
 
-## Can't the architect do this?
+Two things it is not. It is not construction management — the contractor still runs
+the site, holds the trade contracts and carries the build risk. And it is not
+supervision of the builder. The best contractors tend to prefer working alongside
+an owner's representative, because verified draws get paid without argument and
+because a competent counterparty on the owner's side removes a large class of
+disputes before they start.
 
-Partly, sometimes. Many contracts give the architect a payment-certification role, and a good architect adds real oversight. But the architect's first loyalty is to the design, their fee is often a percentage of the same construction cost being examined, and contract administration is a sliver of their attention. They are a valuable check, not owner-side representation — ask any architect whether they want to be responsible for auditing draws, and most will say no with feeling.
+## The comparison
 
-## What it means for cost
+| | General contractor (and their PM) | Owner's representative |
+|---|---|---|
+| **Retained by** | The owner, under the construction contract | The owner, under a separate services agreement |
+| **Obligation runs to** | The contracting entity — the GC | The owner alone |
+| **Holds trade contracts** | Yes | No |
+| **Carries build risk** | Yes — trade performance, defects, warranty | No |
+| **Prepares the schedule of values** | Yes | Reviews it |
+| **Prepares payment applications** | Yes | Tests them against work in place |
+| **Priced changes** | Proposes and prices them | Assesses scope, cause and price |
+| **Compensated by** | Contract price, and margin within it | A fee from the owner only |
+| **Interest when costs rise** | Recover them where the contract allows | Establish whether they are properly the owner's |
+| **Interest in scope disputes** | Resolve favourably to the GC | Resolve accurately |
+| **Statutory holdback** | Retains from subcontractors | Verifies the owner's compliance |
+| **Answers to** | Their employer | The owner |
 
-A GC's fee pays for construction. A representative's fee pays for information and leverage: contract terms improved before signing, draws checked before release, changes priced with support, problems surfaced while they are cheap. We publish our fixed-scope fees and our full-representation structure on [the fees page](/fees) — and we publish no savings claims, because the overrun that didn't happen has no receipt.
+Read the last row on its own. Everything else follows from it.
 
-## The short version
+## Where the interests actually diverge
 
-Hire a general contractor to build your project. If the project is significant enough that you would not sign a comparable financial commitment without your own advisor, hire representation too — and hire it [before the contract is signed](/services/pre-construction-audit), which is when most of its value is created.
+Most of the time they do not diverge at all. Both parties want a finished, well-built
+house delivered without drama. The divergence is narrow, predictable and expensive,
+and it appears at four points.
+
+**Ambiguity in the documents.** When the drawings and specifications do not clearly
+say whether something is included, someone has to decide. The contractor's honest
+reading and the owner's honest reading of the same ambiguity will differ, reliably,
+in a direction that follows the money. Neither party is lying. This is what
+ambiguity is.
+
+**The contingency.** Whether a given cost is properly charged to contingency, and
+who authorises it, is a judgment made by the party who benefits from one answer.
+
+**Percentage complete.** A payment application asserts that framing is 80% done.
+The assertion is made by the party being paid for framing. Optimism does not require
+dishonesty: partially finished work looks more finished than it is, and the last
+20% of most trades takes far more than 20% of the effort.
+
+**Bad news, and when it travels.** A contractor who spots a four-week problem will
+usually try to solve it before reporting it — which is often the right instinct, and
+sometimes means the owner learns about a problem after the window for cheap
+responses has closed.
+
+## What this does not mean
+
+It does not mean your builder is adversarial. The overwhelming majority of general
+contractors are competent people trying to deliver a good building at a fair margin,
+and an owner who treats the relationship as adversarial gets a worse project, a
+slower one, and eventually a more expensive one.
+
+It does not mean the contractor's project manager is doing anything improper by
+representing their employer's interests. That is their job, correctly performed.
+
+And it does not mean an owner's representative is a substitute for a good builder.
+Nobody's review process makes a poor contractor into a good one. The order of
+operations is: hire well, then verify.
+
+What it means is narrower and harder to argue with. **On a construction project,
+every professional is paid by someone, and only one of them can be paid solely by
+you.** If nobody occupies that position, the owner occupies it themselves — which is
+workable when the owner has the time, the experience and the site access, and is
+not workable when they do not.
+
+## The question that decides it
+
+Not "do I trust my builder?" — you should, and if you do not, the problem is
+upstream of this article.
+
+The question is: **who is verifying that the work being claimed actually exists,
+and who do they answer to?**
+
+If the answer is "the party making the claim," that is the structural gap. It may
+still be an acceptable gap on your project — [sometimes it
+is](/insights/when-you-dont-need-one) — but it should be a decision, not an
+assumption.
+
+---
+
+*What British Columbia law places on the owner specifically — licensing, warranty,
+the statutory holdback, liens and completion — is set out in our free guide,
+[Building in British Columbia: What the Owner Is Responsible For](/handbook).*

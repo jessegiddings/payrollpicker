@@ -34,4 +34,11 @@ $300–450 per hour for assessment and advisory work, scoped in writing before i
 
 ## What it isn't
 
-Not litigation — that is your lawyer's work, and we function as the commercial engine behind it rather than a substitute for it. Not a demolition of your builder; many recoveries end with the incumbent finishing well under better discipline. And not always a rescue: sometimes the assessment's most valuable finding is that continuing as-is is the expensive option, and you will get that finding straight — we have no stake in what you decide, only in your deciding it with the facts.
+Not litigation — that is your lawyer's work, and we function as the commercial engine behind it rather than a substitute for it. Not a demolition of your builder; an incumbent finishing under better discipline is often the cheapest outcome available, and the assessment tests for it. And not always a rescue: sometimes the assessment's most valuable finding is that continuing as-is is the expensive option, and you will get that finding straight — we have no stake in what you decide, only in your deciding it with the facts.
+
+
+## Further reading
+
+- [Your project is four months behind. What to do this week.](/insights/four-months-behind) — the first-week sequence
+- [What a payment application doesn't tell you](/insights/what-a-payment-application-doesnt-tell-you) — establishing paid versus built
+- [The 10% you are legally required to withhold](/insights/the-ten-percent-you-must-withhold) — where a BC owner's position is usually strongest or weakest

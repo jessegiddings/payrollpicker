@@ -25,7 +25,7 @@ npm run preview   # serve dist/
 ## Launch gates (from spec §10 — do not deploy publicly before these)
 
 1. **Geordie's name is on `/who-we-are` and referenced on `/services/prefab-and-modular`.**
-   Spec §8.1 requires employment-lawyer review of his Blend agreement *before his name
+   Spec §8.1 requires employment-lawyer review of his prior-employment agreement *before his name
    appears publicly*. Remove or anonymize those passages if launching earlier.
 2. **E&O ($5M+) and CGL bound** (§8.2) before the site implies engagement capability.
 3. Provisional values in `src/lib/site.ts`: home base city, business email. Update once

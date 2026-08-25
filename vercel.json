@@ -2,7 +2,8 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "trailingSlash": false,
   "redirects": [
-    { "source": "/the-owners-position", "destination": "/how-it-works", "permanent": true }
+    { "source": "/the-owners-position", "destination": "/how-it-works", "permanent": true },
+    { "source": "/insights/do-i-need-one", "destination": "/insights/when-you-dont-need-one", "permanent": true }
   ],
   "headers": [
     {
@@ -21,11 +22,21 @@
     },
     {
       "source": "/fonts/(.*)",
-      "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }]
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
     },
     {
       "source": "/_astro/(.*)",
-      "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }]
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
     }
   ]
 }

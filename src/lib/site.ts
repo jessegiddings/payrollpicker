@@ -30,6 +30,8 @@ export const FOOTER_LINKS = [
   { label: 'How We Work', href: '/how-we-work' },
   { label: 'Compare the Models', href: '/compare' },
   { label: 'Insights', href: '/insights' },
+  // LAUNCH GATE: hold until the handbook clears BC construction-lawyer review.
+  { label: 'The BC Owner’s Handbook', href: '/handbook' },
   { label: 'Request a Project Review', href: '/project-review' },
   { label: 'Privacy', href: '/privacy' },
   { label: 'Terms', href: '/terms' },

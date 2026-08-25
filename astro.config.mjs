@@ -13,7 +13,8 @@ export default defineConfig({
       filter: (page) =>
         !page.includes('/projects') &&
         !page.includes('/testimonials') &&
-        !page.includes('/project-review/thank-you'),
+        !page.includes('/project-review/thank-you') &&
+        !page.includes('/handbook/thank-you'),
     }),
   ],
   vite: {

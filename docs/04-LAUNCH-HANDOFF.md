@@ -117,14 +117,14 @@ domain — until these clear:
 
 | # | Gate | Blocks | Status |
 |---|---|---|---|
-| 2.1 | **Employment-lawyer review of Geordie's Blend agreement** (spec §8.1 — non-compete, non-solicit, fiduciary duties as VP & Partner) | His name and photo, currently drafted on `/who-we-are`, `/independence`, and the prefab service page | Open |
+| 2.1 | **Employment-lawyer review of Geordie's prior-employment agreement** (spec §8.1 — non-compete, non-solicit, fiduciary duties as VP & Partner) | His name and photo, currently drafted on `/who-we-are`, `/independence`, and the prefab service page | Open |
 | 2.2 | **E&O at $5M+ and CGL bound** (spec §8.2) | Honest capability claims sitewide | Open |
 | 2.3 | **Fees confirmed by both partners** — audit $25,000–60,000; recovery/advisory $300–450/hr (both from COPY DRAFT v3, published on `/fees`) | `/fees` | Open |
 | 2.4 | **Entity registration, business email, phone** | Footer, `/terms`, contact, schema | Open |
 | 2.5 | **Jesse's bio content** — current copy is the minimal draft; he adds concrete achievements | `/who-we-are` | Open |
 | 2.6 | **Domain**: buy `erskineadvisory.com` (+ `.ca`), CIPO/USPTO/BC registry searches on the wordmark, then attach domain in Vercel + DNS | Public launch | Open |
 | 2.7 | **Technical bench retained and named** (spec §2.3 — cost consultant first) | `/who-we-are` credibility; roles are described, names say "confirmed in the proposal" until real | Open |
-| 2.8 | Decision on the Simon Fyall / Blend conversation (referral source vs quiet exit) | Launch sequencing | Open |
+| 2.8 | Decision on the prior-employer conversation (referral source vs quiet exit) — names held off-repo | Launch sequencing | Open |
 
 ---
 
