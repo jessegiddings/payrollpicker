@@ -1,15 +1,16 @@
 ---
 import Base from '../layouts/Base.astro';
+import { SITE } from '../lib/site';
 ---
 
-<Base title="Page Not Found — Erskine Advisory" description="The page you requested does not exist." noindex={true}>
+<Base title={`Page Not Found — ${SITE.name}`} description="The page you requested does not exist." noindex={true}>
   <div class="mx-auto max-w-6xl px-5 py-24 sm:px-8">
     <div class="max-w-2xl">
       <p class="annotation uppercase tracking-widest">404</p>
       <h1 class="mt-3 text-3xl font-semibold tracking-tight">Not found</h1>
       <p class="prose mt-5">
         That page doesn't exist — which, on this of all websites, we verified before telling you.
-        Start again from <a href="/">the home page</a> or <a href="/the-owners-position">the cornerstone essay</a>.
+        Start again from <a href="/">the home page</a> or <a href="/how-it-works">how it works</a>.
       </p>
     </div>
   </div>

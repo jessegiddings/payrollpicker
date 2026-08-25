@@ -1,10 +1,11 @@
 ---
 import Base from '../layouts/Base.astro';
 import ReviewForm from '../components/ReviewForm.astro';
+import { SITE } from '../lib/site';
 ---
 
 <Base
-  title="Request a Project Review — Erskine Advisory"
+  title={`Request a Project Review — ${SITE.name}`}
   description="Tell us where your project stands — planning, contract in hand, under construction, or stalled — and we’ll respond with an honest read and a scoped proposal within two business days."
 >
   <div class="mx-auto max-w-6xl px-5 py-14 sm:px-8">

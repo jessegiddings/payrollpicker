@@ -2,11 +2,16 @@
 import Base from '../layouts/Base.astro';
 import RiskLadder from '../components/RiskLadder.astro';
 import Plate from '../components/Plate.astro';
-import Stat from '../components/Stat.astro';
 import Inverse from '../components/Inverse.astro';
-import { SITE } from '../lib/site';
+import { SITE, THREE_WORDS } from '../lib/site';
 
+// Five cards, holdback compliance first (rebuild spec §5.1.5).
 const services = [
+  {
+    title: 'Holdback & Draw Compliance',
+    href: '/services/holdback-and-draw-compliance',
+    line: 'Administration of the statutory holdback BC law requires you to retain, with every draw verified before release.',
+  },
   {
     title: 'Pre-Construction Audit',
     href: '/services/pre-construction-audit',
@@ -27,11 +32,6 @@ const services = [
     href: '/services/project-recovery',
     line: 'Stalled projects, cost overruns, contractor disputes.',
   },
-  {
-    title: 'Prefab & Modular',
-    href: '/services/prefab-and-modular',
-    line: 'Factory-built components and modules, where the delivery model creates risks conventional advice doesn’t address.',
-  },
 ];
 
 const jsonLd = [
@@ -42,7 +42,7 @@ const jsonLd = [
     url: SITE.url,
     email: SITE.email,
     description:
-      'Independent owner’s representation on significant residential projects. Contract review, independent oversight, and verification before payment. Compensated by no one but the client.',
+      'Independent owner’s representation on significant residential projects: contract review before signing, verification of work before payment, and administration of the statutory holdback.',
     areaServed: ['Canada', 'United States'],
     address: {
       '@type': 'PostalAddress',
@@ -52,28 +52,23 @@ const jsonLd = [
     },
     knowsAbout: [
       'Owner’s representation',
-      'Construction contract review',
       'Construction draw verification',
+      'Builders lien holdback administration',
+      'Construction contract review',
       'Pre-construction due diligence',
-      'Prefabricated and modular construction',
     ],
   },
 ];
 ---
 
 <Base
-  title="Erskine Advisory — Independent Owner’s Representation"
-  description="We represent owners on significant residential projects. Contract review, independent oversight, and verification before payment. Compensated by no one but you."
+  title={`${SITE.name} — Independent Owner’s Representation`}
+  description="We represent owners on significant residential projects: contract review before signing, independent verification before payment, and administration of the holdback the law requires you to retain."
   jsonLd={jsonLd}
 >
-  <!-- 01 · Hero — full-bleed plate, type over the left third -->
+  <!-- 01 · Hero + the three words -->
   <section class="relative" aria-label="Introduction">
-    <Plate
-      src="/plates/plate-01-rebar.svg"
-      alt=""
-      eager={true}
-      class="h-[78vh] min-h-[540px]"
-    >
+    <Plate src="/plates/plate-01-rebar.svg" alt="" eager={true} class="h-[74vh] min-h-[540px]">
       <div class="plate-scrim" style="background: color-mix(in srgb, #1F4E46 78%, transparent);"></div>
     </Plate>
     <div class="absolute inset-0 z-10 flex items-center">
@@ -82,11 +77,12 @@ const jsonLd = [
           Owner’s representation · Private clients
         </p>
         <h1 class="display mt-6 max-w-4xl text-paper text-balance">
-          Everyone on your project is paid by someone else.
+          Nothing gets paid until someone independent confirms it exists.
         </h1>
         <p class="mt-7 max-w-2xl text-lg leading-relaxed text-paper/95">
-          {SITE.name} represents owners. We review the contract before you sign it, hold the team to it, and
-          verify the work before the money moves. Independent, and compensated by no one but you.
+          {SITE.name} represents owners on significant residential projects. We review the contract before
+          you sign it, verify the work before money is released, and administer the holdback the law requires
+          you to retain. Paid by you, and by no one else on the project.
         </p>
         <div class="mt-9 flex flex-wrap items-center gap-6">
           <a
@@ -106,53 +102,96 @@ const jsonLd = [
     </div>
   </section>
 
-  <!-- 02 · The structural problem — dark band, two-column argument -->
-  <Inverse sectionNo="02 / 07" labelledby="conflict-heading">
+  <div class="border-b border-rule">
+    <dl class="mx-auto grid max-w-6xl gap-8 px-5 py-10 sm:px-8 md:grid-cols-3">
+      {
+        THREE_WORDS.map((item, i) => (
+          <div class="reveal border-l border-rule pl-5" style={`--reveal-delay: ${i * 60}ms`}>
+            <dt class="font-mono text-[0.8125rem] font-semibold tracking-[0.14em] uppercase text-accent">
+              {item.word}
+            </dt>
+            <dd class="mt-2 max-w-xs text-[0.95rem] leading-relaxed">{item.line}</dd>
+          </div>
+        ))
+      }
+    </dl>
+  </div>
+
+  <!-- 02 · Transparency is not verification — the central argument -->
+  <Inverse sectionNo="02 / 09" labelledby="transparency-heading">
     <div class="grid gap-10 md:grid-cols-[5fr_7fr] md:gap-16">
-      <h2 id="conflict-heading" class="display-sm reveal text-balance">
-        The owner is the only party without representation
+      <h2 id="transparency-heading" class="display-sm reveal text-balance">
+        Transparency is not verification
       </h2>
       <div class="reveal max-w-prose space-y-5 text-[1.0625rem] leading-relaxed text-paper/90" style="--reveal-delay: 60ms">
         <p>
-          Your general contractor’s project manager is competent, probably honest, and working for the
-          contractor. That isn’t a criticism — it’s the job, and their obligation runs to the company
-          employing them.
+          Some builders now offer open-book accounting: detailed cost reports, every invoice visible, a login
+          where you can watch the money move. That is a real improvement, and a builder who offers it is
+          doing something worth having.
         </p>
         <p>
-          The architect protects the design. The engineers protect their stamps. The lender protects the
-          loan. The contractor protects the contract.
+          It is still the builder’s own record of the builder’s own work. Open books show you what the
+          builder recorded — they do not tell you whether the framing claimed at eighty percent is at eighty
+          percent, whether the materials billed as stored are on your site, or whether a draw should be
+          released. However honest the bookkeeping, the party requesting payment is still the party
+          describing what the payment is for.
         </p>
         <p>
-          Somewhere in that arrangement is an owner carrying every dollar of risk and taking advice, in large
-          part, from the people the money is going to. It is a structure that works far more often than it
-          fails. When it fails, it fails expensively and late.
+          Verification is different in kind, not degree: a third party with no stake in the answer,
+          confirming the work exists before the money moves. Better bookkeeping never makes a party
+          independent of itself. Independence is structural, not a matter of goodwill.
         </p>
         <p>
-          <a href="/the-owners-position" class="font-medium underline underline-offset-4">
-            The owner’s position →
+          <a href="/compare" class="font-medium underline underline-offset-4">
+            Compare the three models honestly →
           </a>
         </p>
       </div>
     </div>
   </Inverse>
 
-  <!-- 03 · Where risk is actually created -->
-  <section class="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-20" aria-labelledby="timing-heading">
-    <p class="section-no mb-8" aria-hidden="true">03 / 07</p>
-    <div class="max-w-3xl">
-      <h2 id="timing-heading" class="display-sm reveal text-balance">
-        By the time a project feels wrong, the decisions that made it wrong are eighteen months old
+  <!-- 03 · The statutory holdback — the proof case -->
+  <section class="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-20" aria-labelledby="holdback-heading">
+    <p class="section-no mb-8" aria-hidden="true">03 / 09</p>
+    <div class="grid gap-10 md:grid-cols-[5fr_7fr] md:gap-16">
+      <h2 id="holdback-heading" class="display-sm reveal text-balance">
+        The law already assumes your builder can’t do this for you
       </h2>
+      <div class="reveal max-w-prose space-y-5 text-[1.0625rem] leading-relaxed" style="--reveal-delay: 60ms">
+        <p>
+          British Columbia’s Builders Lien Act requires an owner to retain a holdback from every progress
+          payment — an obligation that applies whether or not your contract mentions it, and one your builder
+          cannot discharge on your behalf. The holdback exists to protect the owner <em>from</em> the
+          contracting chain. The party being held back from cannot administer it.
+        </p>
+        <p>
+          Administered correctly, it caps your exposure to lien claims from subcontractors and suppliers you
+          never contracted with. Neglected, it can leave you personally exposed after you have already paid
+          in full. Most owners hear about it for the first time when it is too late to comply.
+        </p>
+        <p>
+          <a
+            href="/services/holdback-and-draw-compliance"
+            class="font-medium text-accent underline underline-offset-4"
+          >
+            Holdback and draw compliance →
+          </a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 · Where the leverage is -->
+  <section class="mx-auto max-w-6xl px-5 pb-16 sm:px-8" aria-labelledby="timing-heading">
+    <p class="section-no mb-8" aria-hidden="true">04 / 09</p>
+    <div class="max-w-3xl">
+      <h2 id="timing-heading" class="display-sm reveal text-balance">Where the leverage is</h2>
       <div class="prose reveal mt-6" style="--reveal-delay: 60ms">
         <p>
           Owners typically engage help in the middle of construction, when a number arrives that doesn’t make
-          sense. By then the contract is signed, the buyout is done, the schedule has been quietly
-          re-baselined twice, and change orders have been accumulating against a scope nobody has read
-          closely since the spring.
-        </p>
-        <p>
-          Almost all of the leverage sat earlier: in the contract, in the bid comparison, in the first three
-          payment applications.
+          sense. By then the contract is signed, the buyout is done, and the early draws are paid. Almost all
+          of the leverage sat earlier: in the contract, in the bid comparison, in the first three payment
+          applications.
         </p>
       </div>
     </div>
@@ -164,68 +203,9 @@ const jsonLd = [
     </p>
   </section>
 
-  <!-- Divider plate -->
-  <Plate
-    src="/plates/plate-03-crane.svg"
-    alt="Latticework of a tower crane seen from directly below"
-    caption="A payment application represents a claim, not a fact."
-    class="h-[52vh] min-h-[360px]"
-  />
-
-  <!-- 04 · Draw control — two-column argument -->
-  <section class="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-20" aria-labelledby="draw-heading">
-    <p class="section-no mb-8" aria-hidden="true">04 / 07</p>
-    <div class="grid gap-10 md:grid-cols-[5fr_7fr] md:gap-16">
-      <h2 id="draw-heading" class="display-sm reveal text-balance">
-        No one should be paid before someone independent confirms the work exists
-      </h2>
-      <div class="reveal max-w-prose space-y-5 text-[1.0625rem] leading-relaxed" style="--reveal-delay: 60ms">
-        <p>
-          The costliest problems on a large residential project are rarely dramatic. A payment application
-          approved for work that is sixty percent complete. A change order that should have been absorbed
-          under the contract. An allowance quietly exceeded. A schedule that slipped a quarter ago and was
-          never formally re-baselined.
-        </p>
-        <p>
-          Each of those is caught the same way: by someone who reads the numbers, walks the site, and signs
-          off before the money moves.
-        </p>
-        <p>If you are not there, that someone cannot be you.</p>
-        <p>
-          <a href="/services/remote-oversight" class="font-medium text-accent underline underline-offset-4">
-            Remote oversight and draw verification →
-          </a>
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Stats — real numbers only -->
-  <section class="border-y border-rule" aria-label="The numbers behind the commitment">
-    <div class="mx-auto grid max-w-6xl gap-12 px-5 py-16 sm:px-8 md:grid-cols-3">
-      <Stat
-        value="$0"
-        label="Compensation we accept from any party but the client. No referral fees, rebates or commissions, in any direction."
-        sentence="We accept zero compensation from any party but the client — no referral fees, rebates or commissions in any direction."
-      />
-      <Stat
-        value="1–5%"
-        label="The industry’s typical owner’s-representation fee, as a share of construction cost — falling as project size rises. Ours is quoted per engagement."
-        sentence="Across the industry, owner's representation typically costs one to five percent of construction cost, with the percentage falling as project size rises; our fee is quoted per engagement."
-        class="md:[--reveal-delay:60ms]"
-      />
-      <Stat
-        value="100%"
-        label="Share of payment applications read against work in place before we recommend releasing a draw."
-        sentence="One hundred percent of payment applications are read against work in place before we recommend releasing a draw."
-        class="md:[--reveal-delay:120ms]"
-      />
-    </div>
-  </section>
-
   <!-- 05 · Services -->
-  <section class="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-20" aria-labelledby="services-heading">
-    <p class="section-no mb-8" aria-hidden="true">05 / 07</p>
+  <section class="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-20 border-t border-rule" aria-labelledby="services-heading">
+    <p class="section-no mb-8" aria-hidden="true">05 / 09</p>
     <h2 id="services-heading" class="display-sm">Services</h2>
     <ol class="mt-10 grid gap-x-10 gap-y-8 md:grid-cols-2">
       {
@@ -242,31 +222,84 @@ const jsonLd = [
         ))
       }
     </ol>
+    <p class="annotation mt-6">
+      Also: <a href="/services/prefab-and-modular" class="text-accent underline underline-offset-4">prefabricated and modular projects</a> — a
+      capability few representatives carry.
+    </p>
   </section>
 
-  <!-- 06 · Independence -->
-  <section class="mx-auto max-w-6xl px-5 pb-4 sm:px-8" aria-labelledby="independence-heading">
-    <p class="section-no mb-8" aria-hidden="true">06 / 07</p>
-    <div class="border-y border-rule bg-accent-wash">
-      <div class="max-w-3xl px-6 py-12 sm:px-10">
-        <h2 id="independence-heading" class="display-sm">We are paid by you and by no one else</h2>
-        <p class="prose mt-5">
-          No referral fees from builders, suppliers, designers or lenders. No ownership interest in any
-          contractor. You sign the construction contract directly — never us. We publish this because it is
-          the only part of the proposition that matters.
+  <!-- 06 · The conflict, demoted to supporting material -->
+  <section class="mx-auto max-w-6xl px-5 pb-16 sm:px-8" aria-labelledby="conflict-heading">
+    <p class="section-no mb-8" aria-hidden="true">06 / 09</p>
+    <div class="grid gap-10 border-t border-rule pt-10 md:grid-cols-[5fr_7fr] md:gap-16">
+      <h2 id="conflict-heading" class="display-sm reveal text-balance">
+        Everyone on your project is paid by someone else
+      </h2>
+      <div class="reveal max-w-prose space-y-5 text-[1.0625rem] leading-relaxed" style="--reveal-delay: 60ms">
+        <p>
+          Your general contractor’s project manager is competent, probably honest, and working for the
+          contractor. The architect protects the design. The engineers protect their stamps. The lender
+          protects the loan. None of that is a criticism — it is each of them doing their job. It simply
+          means that nobody at the table holds, as their actual job, your whole position.
         </p>
-        <p class="mt-6">
-          <a href="/independence" class="text-sm font-medium text-accent underline underline-offset-4">
-            Our independence commitment →
+        <p>
+          <a href="/how-it-works" class="font-medium text-accent underline underline-offset-4">
+            How independent verification works →
           </a>
         </p>
       </div>
     </div>
   </section>
 
-  <!-- 07 · On being a new firm — the most important section on the page -->
-  <section class="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-20" aria-labelledby="newfirm-heading">
-    <p class="section-no mb-8" aria-hidden="true">07 / 07</p>
+  <!-- 07 · Fees — we publish what we charge -->
+  <section class="mx-auto max-w-6xl px-5 pb-16 sm:px-8" aria-labelledby="fees-heading">
+    <p class="section-no mb-8" aria-hidden="true">07 / 09</p>
+    <div class="border border-ink px-6 py-10 sm:px-10">
+      <h2 id="fees-heading" class="display-sm">We publish what we charge</h2>
+      <p class="prose mt-4">
+        The pre-construction audit is a flat $25,000–60,000, stated exactly in the proposal. Recovery and
+        advisory work runs $300–450 per hour. Full representation is quoted per engagement, and the page
+        explains how — along with what we refuse: no percentage of savings, no referral fees, no compensation
+        from anyone but you.
+      </p>
+      <p class="mt-5">
+        <a href="/fees" class="text-sm font-medium text-accent underline underline-offset-4">
+          The fees page, in full →
+        </a>
+      </p>
+    </div>
+  </section>
+
+  <!-- 08 · Independence — the three words, then the commitments -->
+  <section class="mx-auto max-w-6xl px-5 pb-16 sm:px-8" aria-labelledby="independence-heading">
+    <p class="section-no mb-8" aria-hidden="true">08 / 09</p>
+    <div class="border-y border-rule bg-accent-wash">
+      <div class="px-6 py-12 sm:px-10">
+        <h2 id="independence-heading" class="sr-only">Independence</h2>
+        <dl class="grid gap-8 md:grid-cols-3">
+          {
+            THREE_WORDS.map((item) => (
+              <div>
+                <dt class="font-mono text-[0.8125rem] font-semibold tracking-[0.14em] uppercase text-accent">
+                  {item.word}
+                </dt>
+                <dd class="mt-2 max-w-xs text-[0.95rem] leading-relaxed">{item.line}</dd>
+              </div>
+            ))
+          }
+        </dl>
+        <p class="mt-8">
+          <a href="/independence" class="text-sm font-medium text-accent underline underline-offset-4">
+            The seven commitments behind these words →
+          </a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 09 · On being a new firm — unchanged, per spec §7 -->
+  <section class="mx-auto max-w-6xl px-5 pb-16 sm:px-8" aria-labelledby="newfirm-heading">
+    <p class="section-no mb-8" aria-hidden="true">09 / 09</p>
     <div class="grid items-start gap-10 md:grid-cols-[7fr_5fr] md:gap-16">
       <div>
         <h2 id="newfirm-heading" class="display-sm reveal text-balance">
@@ -293,7 +326,7 @@ const jsonLd = [
     </div>
   </section>
 
-  <!-- Closing CTA — dark band -->
+  <!-- CTA -->
   <Inverse labelledby="cta-heading">
     <h2 id="cta-heading" class="display-sm reveal">Start with a project review</h2>
     <p class="reveal mt-5 max-w-prose text-[1.0625rem] leading-relaxed text-paper/90" style="--reveal-delay: 60ms">

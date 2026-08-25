@@ -2,18 +2,19 @@
 import { getCollection } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import ServiceCard from '../../components/ServiceCard.astro';
+import { SITE } from '../../lib/site';
 
 const services = (await getCollection('services')).sort((a, b) => a.data.order - b.data.order);
 ---
 
 <Base
-  title="Services — Erskine Advisory"
-  description="Owner’s representation engagements: pre-construction audit, full representation, remote draw verification, project recovery, and prefabricated project oversight."
+  title={`Services — ${SITE.name}`}
+  description="Owner’s representation engagements: holdback and draw compliance, pre-construction audit, full representation, remote verification, project recovery, and prefab oversight."
 >
   <div class="mx-auto max-w-6xl px-5 py-14 sm:px-8">
     <header class="max-w-3xl">
       <p class="annotation uppercase tracking-widest">Services</p>
-      <h1 class="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">Five engagements, one obligation</h1>
+      <h1 class="mt-3 text-3xl font-semibold tracking-tight sm:text-4xl">Six engagements, one obligation</h1>
       <p class="prose mt-5">
         Every engagement below shares the same structure: we advise, review, verify, coordinate, and report —
         for the owner alone. You contract directly with your builder; we hold no contract with any

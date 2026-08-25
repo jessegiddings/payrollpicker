@@ -4,7 +4,7 @@ slug: 'prefab-and-modular'
 summary: 'Factory-built components and modules, where the delivery model creates risks conventional advice doesn’t address.'
 feeShape: 'Same structures as conventional engagements; scope adapted to the delivery model'
 whoItsFor: 'Owners incorporating factory-built components or modules into a significant residence'
-order: 5
+order: 6
 ---
 
 ## The problem it solves
@@ -23,7 +23,7 @@ Owners incorporating factory-built components into a significant residence — a
 
 ## Fee
 
-The same structures as our conventional engagements — fixed-fee audit, percentage or retainer for full representation — with scope adapted to the delivery model. Published details on [the fees page](/fees).
+The same structures as our conventional engagements — fixed-fee audit, percentage or retainer for full representation — with scope adapted to the delivery model. Published details on [the fees page](/fees); how independent representation differs from the manufacturer's own project management is set out honestly on [the comparison page](/compare).
 
 ## What it isn't
 

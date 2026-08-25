@@ -4,7 +4,7 @@ slug: 'project-recovery'
 summary: 'Stalled projects, cost overruns, contractor disputes. An independent account of where the project actually stands, then a sequenced path to finished.'
 feeShape: '$300–450 per hour for assessment and advisory; recovery oversight quoted from the findings'
 whoItsFor: 'Owners whose project has stalled, whose budget has stopped meaning anything, or whose builder has gone quiet'
-order: 4
+order: 5
 ---
 
 ## If you are reading this late at night
@@ -26,7 +26,7 @@ If the project continues, it continues under structure: verified draws from the 
 
 ## Who it's for
 
-Owners mid-crisis, and equally their advisors — the lawyer or family office asked "how bad is this?" who needs an independent answer before recommending anything.
+Owners mid-crisis, and equally their advisors — the lawyer or family office asked "how bad is this?" who needs an independent answer before recommending anything. If you are here because you are weighing whether your builder's own management should have caught this, [the comparison of the three models](/compare) is worth ten minutes.
 
 ## Fee
 

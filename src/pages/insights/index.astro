@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import Plate from '../../components/Plate.astro';
+import { SITE } from '../../lib/site';
 
 const posts = (await getCollection('insights')).sort(
   (a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf()
@@ -11,7 +12,7 @@ const fmt = new Intl.DateTimeFormat('en-CA', { year: 'numeric', month: 'long', d
 ---
 
 <Base
-  title="Insights — Erskine Advisory"
+  title={`Insights — ${SITE.name}`}
   description="Working notes on the owner’s side of construction: contracts before signing, schedules of values, change orders, draw verification, and building at a distance."
 >
   <div class="mx-auto max-w-6xl px-5 py-14 sm:px-8">

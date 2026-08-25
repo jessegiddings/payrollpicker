@@ -1,6 +1,7 @@
 ---
 import Article from '../layouts/Article.astro';
 import Plate from '../components/Plate.astro';
+import { THREE_WORDS } from '../lib/site';
 
 const commitments = [
   {
@@ -42,7 +43,24 @@ const commitments = [
 >
   <p>The entire proposition rests on one thing, so it should be written down and dated.</p>
 
-  <div class="not-prose mt-10">
+  <div class="not-prose mt-10 border-y border-rule">
+    <dl class="grid gap-8 py-8 md:grid-cols-3">
+      {
+        THREE_WORDS.map((item) => (
+          <div class="border-l border-rule pl-5">
+            <dt class="font-mono text-[0.8125rem] font-semibold tracking-[0.14em] uppercase text-accent">
+              {item.word}
+            </dt>
+            <dd class="mt-2 max-w-xs text-[0.95rem] leading-relaxed">{item.line}</dd>
+          </div>
+        ))
+      }
+    </dl>
+  </div>
+
+  <p class="not-prose annotation mt-8">The seven commitments behind those three words:</p>
+
+  <div class="not-prose mt-4">
     <ol class="max-w-prose">
       {
         commitments.map((c, i) => (

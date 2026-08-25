@@ -18,7 +18,7 @@ export const SITE = {
 } as const;
 
 export const NAV = [
-  { label: 'The Owner’s Position', href: '/the-owners-position' },
+  { label: 'How It Works', href: '/how-it-works' },
   { label: 'Services', href: '/services' },
   { label: 'Fees', href: '/fees' },
   { label: 'Independence', href: '/independence' },
@@ -28,8 +28,16 @@ export const NAV = [
 
 export const FOOTER_LINKS = [
   { label: 'How We Work', href: '/how-we-work' },
+  { label: 'Compare the Models', href: '/compare' },
   { label: 'Insights', href: '/insights' },
   { label: 'Request a Project Review', href: '/project-review' },
   { label: 'Privacy', href: '/privacy' },
   { label: 'Terms', href: '/terms' },
+] as const;
+
+// The three words (rebuild spec §2.1) — used on / and /independence.
+export const THREE_WORDS = [
+  { word: 'Independent', line: 'We are paid by you and by no one else on the project.' },
+  { word: 'Verified', line: 'Nothing is approved for payment until someone has confirmed it exists.' },
+  { word: 'Documented', line: 'Every decision, approval and release is written down and yours to keep.' },
 ] as const;

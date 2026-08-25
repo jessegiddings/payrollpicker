@@ -3,11 +3,12 @@
 // Activate once there are completed engagements with written client
 // permission to describe them. Never populate with stock or invented work.
 import Base from '../layouts/Base.astro';
+import { SITE } from '../lib/site';
 ---
 
 <Base
-  title="Projects — Erskine Advisory"
-  description="Selected engagements of Erskine Advisory."
+  title={`Projects — ${SITE.name}`}
+  description={`Selected engagements of ${SITE.name}.`}
   noindex={true}
 >
   <div class="mx-auto max-w-6xl px-5 py-20 sm:px-8">

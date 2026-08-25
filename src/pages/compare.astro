@@ -1,0 +1,183 @@
+---
+import Article from '../layouts/Article.astro';
+import { SITE } from '../lib/site';
+
+// Compare models, never firms (rebuild spec §5.2).
+const rows = [
+  {
+    dim: 'Who pays them',
+    rep: 'The owner, exclusively. No compensation from any other party on the project.',
+    pm: 'The builder. The PM is the builder’s employee, and their obligation runs to their employer.',
+    ob: 'The builder. Open books are a reporting feature of the builder’s own service.',
+  },
+  {
+    dim: 'Whose records you see',
+    rep: 'An independent file built for you: verification reports, draw approvals, decision log — yours to keep.',
+    pm: 'The builder’s records, summarized for you at the builder’s discretion.',
+    ob: 'The builder’s records, in full. Genuine visibility — into what the builder recorded.',
+  },
+  {
+    dim: 'Who verifies completion',
+    rep: 'A third party with no stake in the answer, against work in place, before payment.',
+    pm: 'The party requesting payment certifies its own progress.',
+    ob: 'Still the builder. Open books document the claim; they do not check it.',
+  },
+  {
+    dim: 'Who administers the holdback',
+    rep: 'Administered on the owner’s side — calculation, lien-period tracking, documented release.',
+    pm: 'It is the owner’s statutory obligation; the party being held back from cannot discharge it.',
+    ob: 'Same. Better bookkeeping does not transfer a statutory obligation that sits with the owner.',
+  },
+  {
+    dim: 'What happens in a dispute',
+    rep: 'You hold an independent record: verified draws, documented decisions, a file built to stand up.',
+    pm: 'The builder’s team represents the builder. You assemble your position afterwards, from their records.',
+    ob: 'Visibility helps — but the record was authored by your counterparty throughout.',
+  },
+  {
+    dim: 'What it costs',
+    rep: 'A visible, separate fee — published structure, quoted per engagement.',
+    pm: 'Included in the builder’s price — which means priced into it, not free.',
+    ob: 'Usually included or a small premium; some of it is marketing.',
+  },
+  {
+    dim: 'When it’s the right choice',
+    rep: 'Significant projects, remote owners, complex sites, or wherever the money at stake justifies independent eyes.',
+    pm: 'Always — a good builder-side PM makes every project better. It is necessary, not sufficient.',
+    ob: 'Always worth having if offered. It is a good builder practice, not owner-side protection.',
+  },
+];
+
+const faqs = [
+  {
+    q: 'Isn’t the builder’s project manager already managing the project?',
+    a: 'Yes, and a good one is worth a great deal. But they are the builder’s employee: when your interest and the builder’s diverge — an ambiguous scope item, a change order, a delay claim — their obligation runs to their employer. Builder-side management is necessary and not sufficient; it is not representation of the owner.',
+  },
+  {
+    q: 'Does open-book accounting replace independent verification?',
+    a: 'No. Open books are a genuine improvement — full visibility into the builder’s records. But they remain the builder’s own record of the builder’s own work. Verification is a third party confirming the work exists before payment is released. Transparency shows you the claim; verification checks it.',
+  },
+  {
+    q: 'Who is responsible for the builders lien holdback?',
+    a: 'The owner. In British Columbia the Builders Lien Act places the retention obligation on the party making payment, and it applies whether or not the contract mentions it. A builder cannot discharge it on your behalf — the holdback exists to protect the owner from the contracting chain, and the party being held back from cannot administer it.',
+  },
+  {
+    q: 'When is builder-provided management enough on its own?',
+    a: 'Genuinely often: small scopes, a long-standing relationship with a builder you have direct experience of, an owner who is on site regularly, or a fixed-price contract with a performance bond. In those configurations, add a lawyer’s contract review before signing and you may not need more.',
+  },
+];
+
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map((f) => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: { '@type': 'Answer', text: f.a },
+    })),
+  },
+];
+---
+
+<Article
+  title={`Independent Representation vs Builder PM vs Open Books — ${SITE.name}`}
+  heading="Independent representation, builder project management, and open books"
+  kicker="An honest comparison"
+  description="Three models for looking after an owner’s interests on a residential project — who pays each one, who verifies the work, who holds the holdback, and when each is genuinely the right choice."
+  jsonLd={jsonLd}
+>
+  <p>
+    Three different things get called “looking after the owner” on a residential project: the builder’s own
+    project management, open-book accounting offered by the builder, and independent owner’s representation.
+    All three are real. They are not the same thing, and the differences are structural rather than a matter
+    of quality. This page compares the models — not any firm — as fairly as we can manage, including the
+    cases where the answer is that you don’t need us.
+  </p>
+
+  <div
+    class="not-prose mt-10 overflow-x-auto xl:w-[68rem]"
+    tabindex="0"
+    role="region"
+    aria-label="Comparison of the three models"
+  >
+    <table class="w-full min-w-[820px] border-collapse text-left">
+      <caption class="annotation mb-4 text-left">
+        Models compared, not firms. Each column describes the structure at its best.
+      </caption>
+      <thead>
+        <tr class="border-b-2 border-ink align-bottom">
+          <th scope="col" class="py-3 pr-4 font-mono text-[0.75rem] font-medium tracking-[0.08em] uppercase text-mid"></th>
+          <th scope="col" class="w-[28%] py-3 pr-4 font-mono text-[0.75rem] font-medium tracking-[0.08em] uppercase text-accent">
+            Independent representation
+          </th>
+          <th scope="col" class="w-[28%] py-3 pr-4 font-mono text-[0.75rem] font-medium tracking-[0.08em] uppercase text-mid">
+            Builder project management
+          </th>
+          <th scope="col" class="w-[28%] py-3 font-mono text-[0.75rem] font-medium tracking-[0.08em] uppercase text-mid">
+            Open-book accounting
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        {
+          rows.map((row) => (
+            <tr class="border-b border-rule align-top">
+              <th scope="row" class="py-5 pr-4 text-sm font-semibold">
+                {row.dim}
+              </th>
+              <td class="py-5 pr-4 text-sm leading-relaxed">{row.rep}</td>
+              <td class="py-5 pr-4 text-sm leading-relaxed text-ink/85">{row.pm}</td>
+              <td class="py-5 text-sm leading-relaxed text-ink/85">{row.ob}</td>
+            </tr>
+          ))
+        }
+      </tbody>
+    </table>
+  </div>
+
+  <h2>The one distinction that decides the rest</h2>
+  <p>
+    Every row above reduces to a single question: <strong>is the party checking the work independent of the
+    party being paid for it?</strong> Builder project management and open books can be excellent — run by
+    conscientious people, worth having, better than the industry norm. They still sit on one side of the
+    table. However good the bookkeeping, the party requesting payment is describing what the payment is for.
+    Verification is different in kind: someone with no stake in the answer, confirming work in place before
+    money moves, and writing it down. That is the whole of the difference, and no amount of quality on either
+    side erases it.
+  </p>
+
+  <h2>When builder-provided management is enough</h2>
+  <p>
+    Often, genuinely. If the scope is modest and you can see the site regularly, the builder’s own management
+    plus your own attention covers most of what representation would. If you have a long-standing
+    relationship with a builder whose work you have direct experience of — not references, experience — the
+    trust you have built is worth real money, and formalizing oversight may add little. A fixed-price
+    contract with a performance bond moves much of the risk representation exists to watch. And an owner who
+    is on site daily is already doing continuous verification, whether they call it that or not.
+  </p>
+  <p>
+    In those configurations, spend a fraction of a representative’s fee on a construction lawyer’s review of
+    the contract before signing, take the open books if they are offered, and proceed. We say this in
+    writing because a comparison page that can’t name the cases against its author isn’t a comparison — and
+    because <a href="/insights/do-i-need-one">telling people when they don’t need us</a> is the cheapest
+    credibility we have.
+  </p>
+
+  <h2>Common questions</h2>
+  <div class="not-prose mt-6 max-w-prose">
+    {
+      faqs.map((f) => (
+        <details class="group border-t border-rule py-4">
+          <summary class="cursor-pointer text-base font-semibold marker:text-accent">{f.q}</summary>
+          <p class="mt-3 text-[0.95rem] leading-relaxed text-ink/90">{f.a}</p>
+        </details>
+      ))
+    }
+  </div>
+
+  <p class="mt-10">
+    Where your project sits among these models is usually clear after one conversation.
+    <a href="/project-review">Request a project review</a> — no fee, and our honest view either way.
+  </p>
+</Article>

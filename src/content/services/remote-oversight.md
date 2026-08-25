@@ -4,7 +4,7 @@ slug: 'remote-oversight'
 summary: 'Site verification, milestone confirmation and payment approval for owners who aren’t local.'
 feeShape: 'Monthly retainer scaled to draw frequency, quoted per engagement'
 whoItsFor: 'Absentee, out-of-province and cross-border owners — anyone funding a project they cannot regularly stand on'
-order: 3
+order: 4
 ---
 
 ## The problem it solves
@@ -17,7 +17,7 @@ Cameras do not fix this. Jobsite webcams and progress photography are a commodit
 
 Each draw cycle:
 
-- **Payment application review** against the schedule of values, prior draws and the contract's payment terms — including holdback and lien compliance for the project's jurisdiction.
+- **Payment application review** against the schedule of values, prior draws and the contract's payment terms. For BC projects, the statutory retention itself is handled under [holdback and draw compliance](/services/holdback-and-draw-compliance), which pairs naturally with this engagement.
 - **Site verification** by a retained licensed inspector in the project's region: work in place, materials genuinely on site and properly stored, milestones actually reached.
 - **A written recommendation** — release, hold, or release in part, with reasons — delivered before the payment deadline, transmitted and recorded so the project file shows who approved what, when, on what evidence.
 - **The running picture**: draw against budget, change orders against contingency, schedule against baseline, photographs selected to inform rather than reassure.

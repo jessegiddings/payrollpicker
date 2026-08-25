@@ -1,6 +1,9 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "trailingSlash": false,
+  "redirects": [
+    { "source": "/the-owners-position", "destination": "/how-it-works", "permanent": true }
+  ],
   "headers": [
     {
       "source": "/(.*)",

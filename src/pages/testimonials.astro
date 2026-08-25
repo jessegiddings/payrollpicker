@@ -3,11 +3,12 @@
 // Activate only with real, permissioned client statements. No invented
 // quotes, ever — one fake element ends a brand built on independence.
 import Base from '../layouts/Base.astro';
+import { SITE } from '../lib/site';
 ---
 
 <Base
-  title="Client References — Erskine Advisory"
-  description="Client references for Erskine Advisory."
+  title={`Client References — ${SITE.name}`}
+  description={`Client references for ${SITE.name}.`}
   noindex={true}
 >
   <div class="mx-auto max-w-6xl px-5 py-20 sm:px-8">

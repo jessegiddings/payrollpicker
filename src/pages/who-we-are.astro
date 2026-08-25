@@ -4,9 +4,10 @@ import Plate from '../components/Plate.astro';
 import { SITE } from '../lib/site';
 
 // LAUNCH GATE (spec §8.1 / open item #2): Geordie's section must not go
-// live until the employment-lawyer review of his Blend agreement clears.
-// Every specific in his bio is drawn from the verified sources in the spec;
-// do not add credentials he does not hold.
+// live until the employment-lawyer review of his employment agreement
+// clears. Every specific in his bio is drawn from the verified sources in
+// the spec; do not add credentials he does not hold. Per REBUILD SPEC v4
+// §5.4, the former employer is not named anywhere on the site.
 // OPEN ITEM #8: Jesse's bio is a draft pending his confirmation of what is
 // public. Concrete achievements to be added by him.
 ---
@@ -15,7 +16,7 @@ import { SITE } from '../lib/site';
   title="Who We Are — The People on Your Project"
   heading="The people on your project"
   kicker="A small practice by design"
-  description="The principals of Erskine Advisory and the independent specialists retained on every engagement. No account managers, no handoffs — the people you meet are the people doing the work."
+  description={`The principals of ${SITE.name} and the independent specialists retained on every engagement. No account managers, no handoffs — the people you meet are the people doing the work.`}
 >
   <p>
     A small practice by design. No account managers, no handoffs, no junior staff sent to site meetings. The
@@ -37,10 +38,10 @@ import { SITE } from '../lib/site';
     went through the entire process, and learned what it costs to build on a site that fights you.
   </p>
   <p>
-    Then he joined the company. Over five years at Blend Projects he moved from Operations Manager to head of
-    sales to Vice President and Partner, working on design-led residential projects across the Pacific
-    Northwest. He has spoken publicly about how construction pricing is actually assembled — the difference
-    between what a client is quoted and what a house costs to deliver.
+    Then he joined the company. Over five years inside a prefab housing company he moved from Operations
+    Manager to head of sales to Vice President and Partner, working on design-led residential projects across
+    the Pacific Northwest. He has spoken publicly about how construction pricing is actually assembled — the
+    difference between what a client is quoted and what a house costs to deliver.
   </p>
   <p>
     He knows how builders quote, how they schedule, how site work and production fit together, and which
@@ -59,12 +60,12 @@ import { SITE } from '../lib/site';
     it.
   </p>
 
-  <h2>The specialists we retain</h2>
+  <h2>The specialists we engage</h2>
   <p>We are not engineers, and we don’t pretend to be.</p>
   <p>
-    For structural and drawing review, cost validation, and site inspection we retain independent
-    specialists: a structural engineer, a professional cost consultant, and licensed inspectors in the
-    regions where we work. Construction counsel on referral where a contract or a dispute requires it.
+    We engage independent specialists — structural engineering, cost consulting, site inspection — and name
+    them in the proposal for your project, matched to its region and scope. Construction counsel on referral
+    where a contract or a dispute requires it.
   </p>
   <p>
     Each is engaged by us and paid by us on your behalf. None has a relationship with your contractor. We

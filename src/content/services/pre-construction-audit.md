@@ -4,7 +4,7 @@ slug: 'pre-construction-audit'
 summary: 'Fixed-fee review of budget, contract, schedule and team before ground breaks. Where most of the value in this work is created.'
 feeShape: 'Flat $25,000–60,000, set by project scale and existing documentation'
 whoItsFor: 'Owners and their advisors with a project approaching signatures'
-order: 1
+order: 2
 ---
 
 ## The problem it solves
